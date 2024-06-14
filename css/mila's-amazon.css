@@ -1,7 +1,9 @@
 body{
     margin: 0;
     background-color: #E9EDED;
-    font-size: 0.9375rem;
+    font-size: .625rem;
+
+    /* font-size: 0.9375rem; */
     color: #fff;
 }
 *{
@@ -34,6 +36,7 @@ body{
 header{
     background: #131921;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -64,6 +67,7 @@ header{
     padding-left: 1rem;
 }
 .sub-header a{
+    text-align: center;
     margin-left: 1rem;
     font-weight: 200;
     color: white;
@@ -161,6 +165,13 @@ header{
     display: flex;
     padding: 0 .5em;
 }
+.boxes.a1,
+.boxes.a2,
+.boxes.a4{
+    display: none;
+}
+
+
 .boxes.a3,
 .boxes.a4{
     flex-direction: column;
@@ -195,6 +206,7 @@ header{
 
 /* search-navigation */
 .search-nav{
+    order: 10;
     width: 40%;
     border-radius: .2rem;
     background: white;
@@ -204,7 +216,7 @@ header{
 .search-nav select,
 .search-nav input{
     border: 0;
-    padding: 0.4375rem;
+    padding: 0.2375rem;
 }
 .search-nav select{
     border-top-left-radius: .2rem;
@@ -216,7 +228,7 @@ header{
     width: 90%;
 }
 .search-nav i{
-    padding: 0.5375rem;
+    padding: 0.2375rem;
     border-top-right-radius: .2rem;
     border-bottom-right-radius: .2rem;
 }
