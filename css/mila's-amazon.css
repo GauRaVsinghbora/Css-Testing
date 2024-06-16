@@ -1,9 +1,8 @@
 body{
     margin: 0;
     background-color: #E9EDED;
-    font-size: .625rem;
 
-    /* font-size: 0.9375rem; */
+    font-size: 0.9375rem;
     color: #fff;
 }
 *{
@@ -66,12 +65,17 @@ header{
     padding: .5rem 0;
     padding-left: 1rem;
 }
+
 .sub-header a{
+    display: none;
     text-align: center;
     margin-left: 1rem;
     font-weight: 200;
     color: white;
     text-decoration: none;
+}
+.visible{
+    display:inline;
 }
 
 .sub-header div{
@@ -291,4 +295,16 @@ header{
 }
 .back-top:hover{
     background-color: #485769;
+}
+
+
+.main-products{
+    height: 14.4375rem;
+    width: 14.4375rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 5e-05) 30.66%, rgba(0, 0, 0, .01953) 42.66%, rgba(0, 0, 0, .5) 99.66%);
+}
+
+.main-products img{
+    width: 80%;
+    object-fit: cover;
 }
